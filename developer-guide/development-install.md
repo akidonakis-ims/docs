@@ -12,7 +12,7 @@ This is especially critical from the perspective of Directus code integration an
 This “updates” the version of each dependency to the latest version. If for whatever reason you need to re-install your vendors, always instead remove your vendor directory and re-run `composer.phar install`
 
 #### Avoid modifying the composer.json file directly
-Always modify dependencies using composer.phar because it will modify the lock file directly. For example, to add a new dependency, run this command: 
+Always modify dependencies using composer.phar because it will modify the lock file directly. For example, to add a new dependency, run this command:
 
 ```
 composer.phar [require](https://getcomposer.org/doc/03-cli.md#require) vendor/package:version
@@ -92,18 +92,18 @@ The \*AMP-packages listed above all include PHP-My-Admin. The following three st
    # mysql will ask to type the server password.
    $ Enter password: ****
    ```
-   
+
 Change **<mysql-user-name>** with the database username, typically is **root** by default.
 
-2. Create the Database 
+2. Create the Database
 	After successfully connect to the MySQL Server, create a database by typing:
-	
+
 	```bash
 	mysql> CREATE DATABASE <database-name>`;
 	```
 
 	Change **<database-name>** with the desired name for the database – then you can exit the server by typing `exit`.
-   
+
 3. Install Directus
 	1. Go to `http://your-directus-host.local/installation` and follow the steps and skip Step 6
 	2. Or Import Directus core database schema and do Step 6
@@ -134,4 +134,4 @@ Under `api/configuration.php` there's a `filesystem` array key-value where you c
 ## Step 8: Done!
 Open Directus by navigating your browser to the path where it was installed in your local host.
 
-If Directus was installed manually, log in using the default user `admin@example.com` and password `password`
+If Directus was installed manually, log in using the default user `admin@admin.com` and password `admin`
