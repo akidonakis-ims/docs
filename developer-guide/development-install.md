@@ -108,11 +108,11 @@ Change **<mysql-user-name>** with the database username, typically is **root** b
 	1. Go to `http://your-directus-host.local/installation` and follow the steps and skip Step 6
 	2. Or Import Directus core database schema and do Step 6
 
-           ```bash
+		```bash
 		$ mysql -u <mysql-user-name> -p <database-name> < api/schema.sql
 		# mysql will ask to type the server password.
 		$ Enter password: ****
-           ```
+		```
 
 
 ## Step 6: Setup Directus
