@@ -2,7 +2,7 @@
 
 Beyond local storage, Directus comes with the ability to connect to a number of popular file storage systems such as CDNs, Amazon S3, Rackspace, Azure and Dropbox. Directus uses [Flysystem](https://github.com/thephpleague/flysystem), so you can easily implement other custom adapters.
 
-> [Learn more about creating new custom adapters on Flysystem's site](https://flysystem.thephpleague.com/creating-an-adapter/).
+> [Learn more about creating new custom adapters on Flysystem's site](https://flysystem.thephpleague.com/docs/advanced/creating-an-adapter/).
 
 Storage Adapters configure different destinations for writing/reading files within Directus. Currently they are defined at the instance-level within the `api/configuration.php` file's  `filesystem` attribute.
 
